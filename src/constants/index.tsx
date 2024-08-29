@@ -30,6 +30,7 @@ interface CarouselImageContent {
   id: number; // Updated type to number
   img?: string;
   data?: string;
+  link?: string;
   title?: string;
    icon?: React.ReactNode
 }
@@ -38,7 +39,8 @@ interface CarouselImageContent {
 interface CarouselImage {
   id: number; // Updated type to number
   img: string;
-  titulo?:string
+  titulo?: string
+
 }
 
 export const navLinks: NavLink[] = [
@@ -83,6 +85,7 @@ export const carouselData: CarouselImageContent[] = [
     id: 1,
     img: img01,
     title: 'Slide 1 Title',
+    link: "",
    data: '1/3/2023',
     icon:<Timer  className='size-5 text-primary '/>
   },
@@ -90,6 +93,7 @@ export const carouselData: CarouselImageContent[] = [
     id: 2,
     img: img01,
     title: 'Slide 2 Title',
+    link: "",
   data: '1/3/2023',
     icon:<Timer  className='size-5 text-primary'/>
   },
@@ -97,6 +101,7 @@ export const carouselData: CarouselImageContent[] = [
     id: 3,
     img: img01,
     title: 'Slide 3 Title',
+    link: "",
     data: '1/3/2023',
     icon:<Timer  className='size-5 text-primary'/>
   },
@@ -104,6 +109,7 @@ export const carouselData: CarouselImageContent[] = [
     id: 4,
     img: img01,
     title: 'Slide 2 Title',
+    link: "",
      data: '1/3/2023',
     icon:<Timer  className='size-5 text-primary'/>
   },
@@ -111,6 +117,7 @@ export const carouselData: CarouselImageContent[] = [
     id: 5,
     img: img01,
     title: 'Slide 3 Title',
+    link: "",
     data: '1/3/2023',
     icon:<Timer  className='size-5 text-primary'/>
   },
@@ -118,6 +125,7 @@ export const carouselData: CarouselImageContent[] = [
     id: 6,
     img: img01,
     title: 'Slide 2 Title',
+    link: "",
  data: '1/3/2023',
     icon:<Timer  className='size-5 text-primary'/>
   },
@@ -128,36 +136,42 @@ export const Destaque:CarouselImageContent[] = [
     id: 1,
     img: img01,
     title: 'Slide 1 Title',
+    link: "",
 
   },
   {
     id: 2,
     img: img01,
     title: 'Slide 2 Title',
+    link: ""
 
   },
   {
     id: 3,
     img: img01,
     title: 'Slide 3 Title',
+    link: ""
 
   },
   {
     id: 4,
     img: img01,
     title: 'Slide 2 Title',
+    link: ""
 
   },
   {
     id: 5,
     img: img01,
     title: 'Slide 3 Title',
+    link: ""
    
   },
   {
     id: 6,
     img: img01,
     title: 'Slide 2 Title',
+    link: ""
 
   },
 ]

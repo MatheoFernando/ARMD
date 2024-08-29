@@ -19,9 +19,9 @@ export function Marcacao() {
           caption_label: "text-lg md:text-xl font-bold text-white",
                       nav: "space-x-1 flex items-center",
           months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0 ", // Padding adicionado para os meses
-          day: "size-14  bg-zinc-500  text-center rounded-sm text-lg m-1", // Padding e margens adicionados para os dias
-          day_today: "bg-[#F0F0F0] text-white",
-          day_selected: "bg-[#F3D194] ",
+          day: "size-14  bg-zinc-100  text-center rounded-sm text-lg m-1", // Padding e margens adicionados para os dias
+          day_today: "bg-slate-800 text-white",
+          day_selected: "bg-orange-400 ",
           nav_button: "text-[#F3D194] font-medium h-12 w-12 bg-primary opacity-100 hover:opacity-100",
           table: "w-full border-collapse space-y-2", // Espaçamento vertical entre as linhas da tabela
           row: "flex space-x-2", // Espaçamento horizontal entre os dias

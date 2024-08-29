@@ -4,6 +4,7 @@ import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import useEmblaCarousel from 'embla-carousel-react'
+import { Link } from 'react-router-dom'
 
 type Slide = {
   img?: string
@@ -46,7 +47,7 @@ const EmblaCarouselContent: React.FC<PropType> = (props) => {
         <div className={`embla__viewport ${viewportClassName}`} ref={emblaRef}>
           <div className={`embla__container h-full ${slidesContainerClassName}`}>
             {slides.map((slide, index) => (
-              <div className={`embla__slide1 ${slideClassName}`} key={index}>
+              <Link to={slide.link} className={`embla__slide1 ${slideClassName}`} key={index}>
                 <div className="embla__slide__content rounded-[2px] mb-4">
                   <div className="overflow-hidden  ">
                     <img
@@ -63,7 +64,7 @@ const EmblaCarouselContent: React.FC<PropType> = (props) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
