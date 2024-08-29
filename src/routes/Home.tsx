@@ -30,10 +30,10 @@ export function Home(): JSX.Element {
       <div className="relative overflow-hidden w-full">
         <div className="absolute inset-0 bg-fixed bg-cover bg-center bg-parallex h-full"></div>
         <div className="relative z-10 bg-gradient-overlay flex items-center justify-center flex-col">
-          <h1 className="text-white font-bold text-2xl z-30 relative my-4">
+          <h1 className="text-white font-bold text-2xl z-30 relative ">
             DESTAQUES
           </h1>
-          <div className="container mx-auto mb-6">
+          <div className="container mx-auto mb-3">
             <EmblaCarouselContent slides={Destaque} options={OPTIONS} />
           </div>
         </div>

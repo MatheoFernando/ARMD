@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Info, Calendar, RefreshCcw, CheckCircle } from 'lucide-react'; // Importing icons from Lucide
+import { Info, Calendar, RefreshCcw, CheckCircle, Timer  } from 'lucide-react'; // Importing icons from Lucide
 import img01 from "../assets/Luanda-Angola.webp";
 import link01 from "../assets/of.png"
 import link02 from "../assets/oms.png"
@@ -84,42 +84,42 @@ export const carouselData: CarouselImageContent[] = [
     img: img01,
     title: 'Slide 1 Title',
    data: '1/3/2023',
-    icon:<Calendar className='size-4 text-primary'/>
+    icon:<Timer  className='size-5 text-primary'/>
   },
   {
     id: 2,
     img: img01,
     title: 'Slide 2 Title',
   data: '1/3/2023',
-    icon:<Calendar className='size-4 text-primary'/>
+    icon:<Timer  className='size-5 text-primary'/>
   },
   {
     id: 3,
     img: img01,
     title: 'Slide 3 Title',
     data: '1/3/2023',
-    icon:<Calendar className='size-4 text-primary'/>
+    icon:<Timer  className='size-5 text-primary'/>
   },
   {
     id: 4,
     img: img01,
     title: 'Slide 2 Title',
      data: '1/3/2023',
-    icon:<Calendar className='size-4 text-primary'/>
+    icon:<Timer  className='size-5 text-primary'/>
   },
   {
     id: 5,
     img: img01,
     title: 'Slide 3 Title',
     data: '1/3/2023',
-    icon:<Calendar className='size-4 text-primary'/>
+    icon:<Timer  className='size-5 text-primary'/>
   },
   {
     id: 6,
     img: img01,
     title: 'Slide 2 Title',
  data: '1/3/2023',
-    icon:<Calendar className='size-4 text-primary'/>
+    icon:<Timer  className='size-5 text-primary'/>
   },
 
 ];

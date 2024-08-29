@@ -3,16 +3,16 @@ import footerlogo1 from "../assets/logoMinsa.svg";
 import footerlogo2 from "../assets/logoArmed.svg";
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#D8DDE5]  bottom-0">
-      <div className="p-2 md:container pt-4 pb-12  flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="w-full bg-[#D8DDE5]  bottom-0 pt-4">
+      <div className="p-2 md:container pt-4 md:pb-12  flex flex-col lg:flex-row justify-between items-center gap-6">
         <div className="flex space-x-4 mb-4 md:mb-0">
           <img src={footerlogo1} alt="Image 1" className="h-12  object-cover" />
           <img src={footerlogo2} alt="Image 2" className="h-12  object-cover" />
         </div>
   
-        <div className="flex items-center flex-col  justify-end mb-4 md:mb-0 pt-8">
+        <div className="flex items-center flex-col  justify-end mb-4 md:mb-0 pt-4 px-2">
           <div className="flex items-center space-x-4">
-            <div className="flex flex-col items-center space-y-2">
+            <div className="flex flex-col items-center space-y-3">
               <a
                 href="https://facebook.com"
                 target="_blank"

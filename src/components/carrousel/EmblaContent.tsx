@@ -4,7 +4,6 @@ import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import useEmblaCarousel from 'embla-carousel-react'
-import "../../styles/emblaCont.css"
 
 type Slide = {
   img?: string
@@ -48,16 +47,16 @@ const EmblaCarouselContent: React.FC<PropType> = (props) => {
           <div className={`embla__container h-full ${slidesContainerClassName}`}>
             {slides.map((slide, index) => (
               <div className={`embla__slide1 ${slideClassName}`} key={index}>
-                <div className="embla__slide__content rounded-md mb-4">
-                  <div className="overflow-hidden w-72 h-44  relative">
+                <div className="embla__slide__content rounded-[2px] mb-4">
+                  <div className="overflow-hidden  ">
                     <img
                       src={slide.img}
                       alt={slide.title || 'Slide image'}
                       className="w-full h-full object-cover transform transition duration-500 ease-in-out hover:scale-110"
                     />
                   </div>
-                  <div className="p-4">
-                    {slide.title && <h3 className="text-lg font-bold mb-2">{slide.title}</h3>}
+                  <div className="p-4 pb-4">
+                    {slide.title && <h3 className="text-lg  mb-2">{slide.title}</h3>}
                     <div className="flex gap-1">
                       {slide.icon && <div className="mb-2">{slide.icon}</div>}
                       {slide.data && <p className="text-sm">{slide.data}</p>}

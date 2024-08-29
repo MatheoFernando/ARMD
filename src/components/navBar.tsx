@@ -18,7 +18,7 @@ export function NavBar() {
         </div>
 
         {/* Navigation Links (centered) */}
-        <nav className="hidden md:flex space-x-4">
+        <nav className="hidden lg:flex space-x-4">
           {navLinks.map((item, index) => (
             <Link
               key={item.id}
@@ -31,7 +31,7 @@ export function NavBar() {
         </nav>
 
         {/* Social Links (right-aligned) */}
-        <div className="hidden md:flex space-x-4 mr-6 md:items-center">
+        <div className="hidden lg:flex space-x-4 mr-6 md:items-center">
           <Link to="/login" className="text-white hover:text-blue-500 border-b-2 border-primary">Login</Link>
           {socialLinks.map((item) => (
             <a
@@ -66,10 +66,10 @@ export function NavBar() {
           <div>
             <Sheet  >
             <SheetTrigger asChild>
-              <Menu className="size-6 cursor-pointer text-white" />
+              <Menu className="size-6 mmd:size-8 cursor-pointer text-white" />
             </SheetTrigger>
             <SheetContent side="top" className="bg-primary">
-          
+           
               <nav className="flex flex-col space-y-4 mt-4">
                 {navLinks.map((item) => (
                   <Link
@@ -80,7 +80,11 @@ export function NavBar() {
                     {item.name}
                   </Link>
                 ))}
-              </nav>
+                </nav>
+                <div className="bg-secondary mt-2 rounded-md w-24 text-center py-2">
+                  <Link to="/login" className="text-white  p-2  hover:text-primary border-primary">Login</Link>
+       
+                 </div>
               
             </SheetContent>
           </Sheet>

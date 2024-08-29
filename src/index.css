@@ -68,21 +68,16 @@
   }
 }
 
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
-/* Ensure the gradient covers the full area and is above the image */
+
 .bg-gradient-overlay {
   position: relative;
-  z-index: 10; /* Ensure the gradient is above the background image */
+  z-index: 10; 
   background: linear-gradient(
-    rgba(180, 84, 182, 0.7), /* RGBA version of #B454B6 with 70% opacity */
-    rgba(180, 84, 182, 0.7)  /* Adjust opacity as needed */
+    rgba(180, 84, 182, 0.7), 
+    rgba(180, 84, 182, 0.7)  
   );
 }
 
-/* Ensure the background image is correctly positioned and covers the container */
 .bg-fixed {
   background-attachment: fixed;
   background-position: center;
