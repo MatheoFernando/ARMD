@@ -72,3 +72,19 @@
   flex: 0 0 100%;
   min-width: 0;
 }
+/* Ensure the gradient covers the full area and is above the image */
+.bg-gradient-overlay {
+  position: relative;
+  z-index: 10; /* Ensure the gradient is above the background image */
+  background: linear-gradient(
+    rgba(180, 84, 182, 0.7), /* RGBA version of #B454B6 with 70% opacity */
+    rgba(180, 84, 182, 0.7)  /* Adjust opacity as needed */
+  );
+}
+
+/* Ensure the background image is correctly positioned and covers the container */
+.bg-fixed {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}

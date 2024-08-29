@@ -32,13 +32,20 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   );
 
   return (
-    <section className="embla bg-slate-400 relative">
+    <section className="embla bg-slate-400 relative w-full">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {carouselImages.map((item) => (
             <div className="embla__slide" key={item.id}>
               <div className="h-96 relative">
-                <img src={item.img} alt="" className="object-cover w-full h-full" />
+                <img
+                  src={item.img}
+                  alt=""
+                  className="object-cover w-full h-full"
+                />
+                <p className="absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl font-semibold text-white pl-4">
+                  {item.titulo}
+                </p>
               </div>
             </div>
           ))}
