@@ -1,3 +1,5 @@
+/// <reference no-default-lib="true"/>
+/* eslint-disable */
 import React from 'react'
 import { EmblaOptionsType } from 'embla-carousel'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'

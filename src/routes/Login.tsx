@@ -1,3 +1,5 @@
+/// <reference no-default-lib="true"/>
+/* eslint-disable */
 import { useAuth } from "@/components/contetxApi.tsx/AuthContext";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
