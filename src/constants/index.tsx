@@ -84,7 +84,7 @@ export const carouselData: CarouselImageContent[] = [
     img: img01,
     title: 'Slide 1 Title',
    data: '1/3/2023',
-    icon:<Timer  className='size-5 text-primary'/>
+    icon:<Timer  className='size-5 text-primary '/>
   },
   {
     id: 2,

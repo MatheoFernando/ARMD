@@ -30,7 +30,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         parallex: "url('./assets/paralax01.jpg')",
-        parallex02: "url('./assets/map2.jpg')",
+        parallex02: "url('./assets/mps.svg')",
       },
 
       colors: {
