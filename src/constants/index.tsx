@@ -184,6 +184,7 @@ export const imageDataLinks: ImageDataLinks[]  = [
   { id: 8, src: link08 },
  
 ];
+
 export const menuItemsDash = [
   { path: '/dashboard', label: 'Dashboard' },
   { path: '/orders', label: 'Orders' },
@@ -193,8 +194,13 @@ export const menuItemsDash = [
 ];
 // types.ts
 
+type Route = {
+  path: string;
+  title: string;
+  element: React.ReactNode;
+};
 
-export const routesAdmin = [
+export const routesAdmin:Route[] = [
   { path: "admin", element: <HomePage />, title: "Dashboard" },
   { path: "orders", element: <OrdersPage />, title: "Orders" },
   { path: "products", element: <ProductsPage />, title: "Products" },

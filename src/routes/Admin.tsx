@@ -1,5 +1,4 @@
-// @ts-nocheck
-/* eslint-disable */
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Bell, Menu, Search } from "lucide-react";
@@ -11,9 +10,16 @@ import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import logo from "../assets/logoArmed.svg";
 import { routesAdmin } from "@/constants";
-
+type Route = {
+  path: string;
+  title: string;
+  element: React.ReactNode;
+};
+interface MainContentProps {
+  currentRoute: Route;
+}
 export function Admin() {
-  const [currentRoute, setCurrentRoute] = useState(routesAdmin[0]);
+  const [currentRoute, setCurrentRoute] = useState<Route>(routesAdmin[0]);
 
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
@@ -122,8 +128,7 @@ export function Admin() {
     </div>
   );
 }
-
-export function MainContent({ currentRoute }) {
+export function MainContent({ currentRoute }: MainContentProps) {
   return (
     <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
       <div className="flex items-center">
@@ -137,4 +142,3 @@ export function MainContent({ currentRoute }) {
     </main>
   );
 }
-
