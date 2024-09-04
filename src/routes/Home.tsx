@@ -27,6 +27,7 @@ export function Home(): JSX.Element {
         <EmblaCarouselContent slides={carouselData} options={OPTIONS} />
       </div>
       <Marcacao />
+      <h1 className="text-5xl">ola</h1>
       <div className="relative overflow-hidden w-full">
         <div className="absolute inset-0 bg-fixed bg-cover bg-center bg-parallex h-full"></div>
         <div className="relative z-10 bg-gradient-overlay flex items-center justify-center flex-col">
