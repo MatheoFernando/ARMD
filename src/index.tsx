@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true"/>
 import { EmblaOptionsType } from "embla-carousel";
 import { NavBar } from "@/components/navBar";
-import "../styles/embla.css";
+import "./styles/embla.css";
 import EmblaCarousel from "@/components/carrousel/emblaCarrousel";
 import { Servicos } from "@/components/servicos";
 import EmblaCarouselContent from "@/components/carrousel/EmblaContent";
