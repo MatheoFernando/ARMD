@@ -1,30 +1,16 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Info, Calendar, RefreshCcw, CheckCircle, Timer  } from 'lucide-react'; // Importing icons from Lucide
+import { Timer  } from 'lucide-react'; // Importing icons from Lucide
 import img01 from "../assets/Luanda-Angola.webp";
-import link01 from "../assets/of.png"
 import link02 from "../assets/oms.png"
-import link03 from "../assets/anvisa.png"
+import link03 from "../assets/iconARMED.svg"
 import link04 from "../assets/pnud.png"
-import link05 from "../assets/thewordbank.png"
-import link06 from "../assets/inis.png"
-import link07 from "../assets/ofa.svg"
-import link08 from "../assets/infarmed.png"
 import HomePage from "@/routes/Dashboard/HomePage";
 import OrdersPage from "@/routes/Dashboard/OrdersPage";
 import CustomersPage from "@/routes/Dashboard/CustomersPage";
 import AnalyticsPage from "@/routes/Dashboard/AnalyticsPage";
 import ProductsPage from "@/routes/Dashboard/ProductsPage";
-interface NavLink {
-  id: string;
-  name: string;
-  path: string;
-}
+import servicosInform from "../assets/icones/Informacoes.svg"
+import servicosInscr from "../assets/icones/inscricaoOFA-02.svg"
 
-interface SocialLink {
-  id: string;
-  icon: JSX.Element;
-  url: string;
-}
 
 interface CarouselImageContent {
   id: number; // Updated type to number
@@ -36,49 +22,7 @@ interface CarouselImageContent {
 }
 
 
-interface CarouselImage {
-  id: number; // Updated type to number
-  img: string;
-  titulo?: string
 
-}
-
-export const navLinks: NavLink[] = [
-  { id: "1", name: "Home", path: "/" },
-  { id: "2", name: "Sobre Nós", path: "/Sobre-Nós" },
-  { id: "3", name: "Farmacovigilância", path: "/Farmacovigilância" },
-  { id: "4", name: "Legislação e Documentos", path: "/Legislação-Documentos" },
-  { id: "5", name: "Contactos", path: "/Contactos" },
-];
-
-export const socialLinks: SocialLink[] = [
-  { id: "1", icon: <FaFacebook />, url: 'https://facebook.com' },
-  { id: "2", icon: <FaInstagram />, url: 'https://instagram.com' },
-  { id: "3", icon: <FaLinkedin />, url: 'https://linkedin.com' },
-];
-
-export const carouselImages: CarouselImage[] = [
-  {
-    id: 1,
-    img: img01,
-  
-  },
-  {
-    id: 2,
-    img: img01,
-    
-  },
-    {
-    id: 3,
-    img: img01,
-  
-  },
-  {
-    id: 4,
-    img: img01,
-  
-  }
-];
 
 export const carouselData: CarouselImageContent[] = [
   {
@@ -177,25 +121,22 @@ export const Destaque:CarouselImageContent[] = [
 ]
 
 export const itemsServicos = [
-  { icon: <Info className="size-12 md:size-14 text-primary" />, title: 'Informações' },
-  { icon: <Calendar className="size-12 md:size-14 text-primary" />, title: 'Marcação de Agenda' },
-  { icon: <RefreshCcw className="size-12 md:size-14 text-primary" />, title: 'Renovação da Autorização' },
-  { icon: <CheckCircle className="size-12 md:size-14 text-primary" />, title: 'Autorizados' },
+  { icon: servicosInform, title: 'Informações', url: 'requisitos-para-inscricao' },
+  { icon: servicosInscr, title: 'Inscrição' , url: 'inscricao'},
+  { icon: servicosInscr, title: 'Inscrição' , url: 'inscricao'},
+ 
 ];
 interface ImageDataLinks {
   id: number;
   src: string;
+  url:string
  
 }
 export const imageDataLinks: ImageDataLinks[]  = [
-  { id: 1, src: link01 },
-  { id: 2, src: link02},
-  { id: 3, src: link03},
-  { id: 4, src: link04},
-  { id: 5, src: link05  },
-  { id: 6, src: link06},
-  { id: 7, src: link07 },
-  { id: 8, src: link08 },
+  { id: 1, src: link02 , url: "/"},
+  { id: 2, src: link04, url: "/"},
+  { id: 3, src: link03, url: "/"},
+
  
 ];
 

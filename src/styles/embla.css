@@ -34,14 +34,11 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
 }
 
 .embla__dot {
-  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
   appearance: none;
-  background-color: #333;
   touch-action: manipulation;
   display: inline-flex;
   text-decoration: none;
@@ -110,11 +107,10 @@ box-shadow: rgba(33, 35, 38, 0.5) 0px 10px 10px -10px;
 
 
 .embla__dot:after {
-  content: '';
-  width: 0.50rem;
-  height: 0.50rem;
+  content: '  ';
+width: 0.6rem;
+  height: 0.6rem;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.4); /* Default dot color */
 }
 
 .embla__dot--selected:after {
