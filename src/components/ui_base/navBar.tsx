@@ -1,12 +1,11 @@
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu,  ChevronDown, ChevronUp } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../../src/assets/logoofa.svg";
+import logo from "../../../src/assets/logoofa.svg";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, DropdownMenuGroup } from "@/components/ui/dropdown-menu";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { NavegacionsBar } from '@/constants/navegationc';
 import { useState } from "react";
-import { Button } from "./ui/button";
 
 export function NavBar() {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -16,11 +15,12 @@ export function NavBar() {
       <div className="flex justify-between items-center h-[5rem] px-4 md:px-8">
         {/* Logo */}
         <div className="flex items-center gap-6">
-          <img
+          <Link to={"/"}>
+              <img
             src={logo}
             alt="logo"
             className={`transition-all duration-300 cursor-pointer mt-10 ${logo ? 'w-24' : 'w-12'}`}
-          />
+          /></Link>
           <nav className="hidden lg:flex space-x-6">
             {/* Navigation Links (centered) */}
             {NavegacionsBar.map((navItem, index) => (
@@ -58,7 +58,7 @@ export function NavBar() {
         </div>
 
         <div className="hidden lg:flex  mr-6 md:items-center">
-          <Button onClick={() => navigate('/meu-perfil')} className="text-white   uppercase py-2 px-3 rounded-md font-medium" style={{ background: 'linear-gradient(to right,  #ffe134, #6f2871)' }}>área restrita</Button>
+          <button onClick={() => navigate('/meu-perfil')} className="text-white   uppercase py-2 px-3 rounded-md font-medium" style={{ background: 'linear-gradient(to right,  #ffe134, #6f2871)' }}>área restrita</button>
         </div>
 
         {/* Hamburger Menu for small screens */}

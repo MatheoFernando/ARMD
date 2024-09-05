@@ -1,15 +1,11 @@
-import  { useState } from 'react';
-import Step2 from './Step2';
-import Step3 from './Step3';
-import Step4 from './Step4';
-import Step5 from './Step5';
+import { useState } from 'react';
 import { DadosPessoais } from './steps/DadosPessoais';
 import { DadosInstitucionais } from './steps/DadosInstitucionais';
 import { AnexarDocumentos } from './steps/AnexarDocumentos';
 import { Pagamento } from './steps/Pagamento';
 import { DadosAcademicos } from './steps/DadosAcademicos';
 
-export  function Inscricoes() {
+export function Inscricoes() {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     step1Data: '',
@@ -19,27 +15,44 @@ export  function Inscricoes() {
     step5Data: '',
   });
 
-  const handleNextStep = () => setCurrentStep(prev => prev + 1);
-  const handlePreviousStep = () => setCurrentStep(prev => prev - 1);
+  const handleNextStep = () => setCurrentStep((prev) => prev + 1);
+  const handlePreviousStep = () => setCurrentStep((prev) => prev - 1);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const stepTitles = [
+    "Dados Pessoais",
+    "Dados Institucionais",
+    "Dados Acadêmicos",
+    "Anexar Documentos",
+    "Pagamento",
+  ];
+
   return (
-    <div className="flex items-start px-4 mx-4 rounded shadow py-12">
-      <div className="w-full">
-        {[1, 2, 3, 4, 5].map(step => (
-          <div key={step} className="flex items-center w-full">
-            <div className={`w-8 h-8 shrink-0 mx-[-1px] p-1.5 flex items-center justify-center rounded-full 
-              ${currentStep >= step ? 'bg-blue-600' : 'bg-gray-300'}`}>
-              <span className="text-base text-white font-bold">{step}</span>
+    <div className="flex flex-col items-center container w-full">
+      <div className="my-32 rounded shadow py-12 w-screen">
+        <div className="flex items-center justify-center w-full">
+          {[1, 2, 3, 4, 5].map((step) => (
+            <div key={step} className="flex items-center w-full">
+              <div
+                className={`w-8 h-8 shrink-0 p-1.5 flex items-center justify-center rounded-full mx-2
+                ${currentStep >= step ? 'bg-blue-600' : 'bg-gray-300'}`}
+              >
+                <span className="text-base text-white font-bold">{step}</span>
+              </div>
+              {step < 5 && (
+                <div
+                  className={`w-full h-[2px] rounded-lg 
+                  ${currentStep > step ? 'bg-blue-600' : 'bg-gray-300'}`}
+                ></div>
+              )}
             </div>
-            {step < 5 && (
-              <div className={`w-full h-[2px] mx-4 rounded-lg ${currentStep > step ? 'bg-blue-600' : 'bg-gray-300'}`}></div>
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
+
+   
       </div>
 
       <div className="w-full mt-6">
@@ -81,5 +94,3 @@ export  function Inscricoes() {
     </div>
   );
 }
-
-

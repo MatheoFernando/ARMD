@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
-import { api } from '../api';
+import { api } from '../../api';
 
 export type CarouselImage = {
   _id: number;

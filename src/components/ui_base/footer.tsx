@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import logofooter from "../assets/logoofa.svg";
-import androidplay from "../assets/img/Androidapp.png"
-import appstore from "../assets/img/AppStore.png"
+import logofooter from "../../assets/logoofa.svg";
+import androidplay from "../../assets/img/Androidapp.png"
+import appstore from "../../assets/img/AppStore.png"
 function Copyright() {
     return (
         <p className="text-center text-gray-500 text-sm">

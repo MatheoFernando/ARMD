@@ -69,13 +69,3 @@
 }
 
 
-.bg-gradient-overlay {
-  position: relative;
-  z-index: 10; 
-  background: linear-gradient(
-    rgba(180, 84, 182, 0.7), 
-    rgba(180, 84, 182, 0.7)  
-  );
-}
-
-

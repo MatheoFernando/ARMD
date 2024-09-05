@@ -3,7 +3,7 @@ import { EmblaOptionsType } from 'embla-carousel';
 import { DotButton, useDotButton } from './EmblaCarouselDotButton';
 import useEmblaCarousel from 'embla-carousel-react';
 import { Link, useNavigate } from 'react-router-dom';
-import { api } from '../api';
+import { api } from '../../api';
 import { LoaderCircle } from 'lucide-react';
 
 type Slide = {

@@ -3,11 +3,6 @@ import img01 from "../assets/Luanda-Angola.webp";
 import link02 from "../assets/oms.png"
 import link03 from "../assets/iconARMED.svg"
 import link04 from "../assets/pnud.png"
-import HomePage from "@/routes/Dashboard/HomePage";
-import OrdersPage from "@/routes/Dashboard/OrdersPage";
-import CustomersPage from "@/routes/Dashboard/CustomersPage";
-import AnalyticsPage from "@/routes/Dashboard/AnalyticsPage";
-import ProductsPage from "@/routes/Dashboard/ProductsPage";
 import servicosInform from "../assets/icones/Informacoes.svg"
 import servicosInscr from "../assets/icones/inscricaoOFA-02.svg"
 
@@ -155,10 +150,3 @@ type Route = {
   element: React.ReactNode;
 };
 
-export const routesAdmin:Route[] = [
-  { path: "admin", element: <HomePage />, title: "Dashboard" },
-  { path: "orders", element: <OrdersPage />, title: "Orders" },
-  { path: "products", element: <ProductsPage />, title: "Products" },
-  { path: "customers", element: <CustomersPage />, title: "Customers" },
-  { path: "analytics", element: <AnalyticsPage />, title: "Analytics" }
-];
